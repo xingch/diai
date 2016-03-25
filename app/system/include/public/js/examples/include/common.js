@@ -199,4 +199,7 @@ define(function(require, exports, module) {
 		return langtxt;
 	}
 	
+    $(".supportbox").hide();
+    $("#shouquan").parent("div").hide();
+	
 });

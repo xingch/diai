@@ -232,6 +232,7 @@ define(function(require, exports, module) {
 	    });
 	    
 	    $(".supportbox").hide();
+	    $("#shouquan").parent("div").hide();
 	    
 	    $("#index_submit").click(function(){
 	    	var name, tel, email, type, message;

@@ -2,13 +2,15 @@
 html,body{background:#fff;color:#333;font:14px/1.6 'Microsoft YaHei',Tahoma,Verdana,'Simsun';}
 a{color:#333;text-decoration:none;}
 a:hover{color:#e9280c;text-decoration:none;}
-.tem_inner,.met_section{position:relative;margin:0 auto;margin:0 auto;width:1000px;}
+.tem_inner,.met_section{position:relative;margin:0 auto;margin:0 auto;width:1100px;}
+/*
 @media(min-width:1000px){.tem_inner{padding:0;width:1000px;}
 }
 @media(min-width:1200px){.tem_inner,.met_section{padding:0;width:1100px;}
 }
 @media(min-width:1800px){.tem_inner,.met_section{padding:0;width:70%;}
 }
+*/
 .nav_scroll{position:fixed;width:100%;margin:0;left:0;top:0;background:#ffffff;z-index:10000;}
 header{background:#ffffff;widht:100%;min-height:110px;}
 header.tem_headborder{border-bottom:1px solid #ddd;}

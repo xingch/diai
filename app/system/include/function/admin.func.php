@@ -209,7 +209,7 @@ function column_sorting($type) {
 function get_adminnav() {
 	global $_M;
 	$jurisdiction = background_privilege();
-	$query = "select * from {$_M['table']['admin_column']} order by type desc,list_order";
+	$query = "select * from {$_M['table']['admin_column']} where is_hidden=0 order by type desc,list_order";
 	$sidebarcolumn = DB::get_all($query);
 	$bigclass = array();
 	foreach ($sidebarcolumn as $key => $val) {

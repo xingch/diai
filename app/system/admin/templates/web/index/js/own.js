@@ -64,6 +64,9 @@ define(function(require, exports, module) {
 			});
 			metgetdata($('#newslist'));
 			
+		    $(".supportbox").hide();
+		    $("#shouquan").parent("div").hide();
+			
 
 			var bdUrl = $(".bdsharebuttonbox").attr("data-bdUrl"),
 				bdText = $(".bdsharebuttonbox").attr("data-bdText"),

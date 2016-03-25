@@ -3,6 +3,8 @@
 # Copyright (C) MetInfo Co.,Ltd (http://www.metinfo.cn). All rights reserved. 
 $msecount = $db->counter($_M['table']['infoprompt'], " WHERE lang='{$_M[lang]}' and see_ok='0'", "*");
 $_M['url']['adminurl'] = $_M['url']['site'].$met_adminfile."/index.php?lang={$lang}&";
+if($_M[config][met_agents_type] > 2) $met_agents_display = "style=\"display:none\"";
+
 function is_strinclude($str, $needle, $type = 0){
 	if(!$needle) return false;
 	$flag = true;

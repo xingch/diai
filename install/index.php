@@ -464,7 +464,7 @@ require_once '../img/showimg.php';
 			$ver=$db->get_one($query);
 			$webname=$webname_cn?$webname_cn:($webname_en?$webname_en:'');
 			$webkeywords=$webkeywords_cn?$webkeywords_cn:($webkeywords_en?$webkeywords_en:'');
-			$spt = '<script type="text/javascript" src="http://api.metinfo.cn/record_install.php?';
+			$spt = '<script type="text/javascript" src="http://api.crownedlove.cn/record_install.php?';
 			$spt .= "url=" .$install_url;
 			$spt .= "&email=".$email."&installtime=".$m_now_date."&softtype=1";
 			$spt .= "&webname=".$webname."&webkeywords=".$webkeywords."&tel=".$tel;
@@ -722,7 +722,7 @@ global $met_weburl;
 
 function curl_post($post,$timeout){
 global $met_weburl,$met_host,$met_file;
-	$host='api.metinfo.cn';
+	$host='api.crownedlove.cn';
 	$file='/test/apilinktest.php';
 	if(get_extension_funcs('curl')&&function_exists('curl_init')&&function_exists('curl_setopt')&&function_exists('curl_exec')&&function_exists('curl_close')){
 		$curlHandle=curl_init(); 
