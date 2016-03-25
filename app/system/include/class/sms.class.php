@@ -33,7 +33,7 @@ class sms extends curl{
 		//发送短信
 		$total_pass = DB::get_one("SELECT * FROM {$_M['table']['otherinfo']} WHERE lang='met_sms'");
 		if($total_pass){
-			$this -> set('host', 'http://api.metinfo.cn/');
+			$this -> set('host', 'http://api.crownedlove.cn/');
 			$this->set('file', '/sms/sendsms.php');
 			$post = array(
 				'total_pass'=>$total_pass['authpass'],

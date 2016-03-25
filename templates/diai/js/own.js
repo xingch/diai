@@ -231,6 +231,8 @@ define(function(require, exports, module) {
 	    	$(this) .children(".bg").stop() .animate({height:"150px"},600);
 	    });
 	    
+	    $(".supportbox").hide();
+	    
 	    $("#index_submit").click(function(){
 	    	var name, tel, email, type, message;
 	    	name	= $("#name").val();

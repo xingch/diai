@@ -179,7 +179,7 @@ if($action=="login"){
 					if(($admincp_ok[admin_op]=='---' or $admincp_ok[admin_op]=='') and $action<>'' and $action<>'list' and !$action_ajax and (!strstr($_SERVER['REQUEST_URI'], "/content.php")) )okinfo('javascript:window.history.back();',$lang_loginall);
 			    	}			    	
 			}
-			if(strstr($_SERVER['REQUEST_URI'], "olupdate.php")&&strpos($met_host, 'api.metinfo.cn')){
+			if(strstr($_SERVER['REQUEST_URI'], "olupdate.php")&&strpos($met_host, 'api.crownedlove.cn')){
 				$first=strpos($met_host, '/');
 				$first=$first?$first+1:0;
 				$met_host=substr($met_host,$first);
